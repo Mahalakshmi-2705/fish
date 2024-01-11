@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.Ship_to">
+
+    <com.google.android.material.card.MaterialCardView
+
+        style="@style/CardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="150dp"
+        android:elevation="6dp">
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/inika_regular"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.App.TextInputLayout"
+            android:id="@+id/NameTyping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:hint="Update The Address"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/AddressUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EAE4E8"
+                android:gravity="top|start"
+                android:fontFamily="@font/inika_regular"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:maxLines="5" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/editDeleteL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:layout_marginStart="80dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/UpdateAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/navy"
+                android:text="Update"
+                android:fontFamily="@font/inika_regular"
+                android:gravity="center"
+                android:textSize="20sp"
+
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/deleteImg"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/ic_delete" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".fragment.Payment">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="150dp"
+        style="@style/CardViewStyle"
+        app:cardElevation="10dp">
+
+        <RadioGroup
+            android:id="@+id/radioGRP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="30dp"
+            >
+
+            <RadioButton
+                android:id="@+id/UPI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPI"
+                android:textSize="18sp"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:id="@+id/Debit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Debit Card"
+                android:textSize="18sp"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:id="@+id/CashOnDelivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash On Delivery"
+                android:textSize="18sp"
+                android:onClick="onRadioButtonClicked"/>
+
+
+        </RadioGroup>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/BackToHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/navy"
+        android:text="Pay Rs.600"
+        android:gravity="center"
+        android:layout_marginTop="430dp"
+        android:layout_marginStart="120dp"
+        android:textSize="19sp" />
+
+</FrameLayout>
