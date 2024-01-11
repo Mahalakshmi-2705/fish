@@ -16,7 +16,7 @@
         android:src="@drawable/logout_icon"
         android:layout_marginStart="370dp"/>
     <FrameLayout
-        android:id="@+id/MyNavHostFragment"
+        android:id="@+id/Fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="40dp"

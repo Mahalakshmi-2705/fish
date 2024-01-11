@@ -4,6 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.fishproject.ui.MainFragment"
     xmlns:me.relex="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.fish.model.HomeViewModel" />
+    </data>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
